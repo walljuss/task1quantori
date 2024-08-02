@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="leftContainer">
+          <div class="profile">
+            <a href="">
+              <img class="profileImg" src="./icons/profileIcon.png" alt="" />
+            </a>
+          </div>
+          <div class="links">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+        <div class="loginLink">
+          <a href="#">Login</a>
+        </div>
+
+        <div class="toggleBtnContainer">
+          <button class="toggleBtn">
+            <img src="./icons/tripleDotIcon.png" alt="" />
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="mobileLinks">
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">Login</a>
+      </div>
+      <div class="backgroundMain">
+        <div class="topRight boxes"></div>
+        <div class="topLeft boxes"></div>
+        <div class="bottomRight boxes"></div>
+        <div class="bottomLeft boxes"></div>
+      </div>
+      <div class="loginForm">
+        <form>
+          <p>Login</p>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="email@example.com"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+
+          <div class="btns">
+            <button class="cancelBtn">Cancel</button>
+            <button class="loginBtn">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; Copyright 2024</p>
+    </footer>
+  </body>
+</html>

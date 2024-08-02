@@ -1,0 +1,252 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  color: #495f4b;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/** body elements**/
+header {
+  height: 2rem;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 90%;
+  position: relative;
+}
+
+footer {
+  height: 2rem;
+  background-color: #36485e;
+  text-align: right;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+footer > p {
+  margin-right: 1rem;
+  color: white;
+  font-size: 0.5rem;
+}
+
+.mobileLinks {
+  display: none;
+}
+
+.toggleBtnContainer {
+  display: none;
+  height: 100%;
+}
+
+.toggleBtn {
+  height: 100%;
+  padding: 0;
+}
+
+.toggleBtn > img {
+  height: 100%;
+  background-color: #66837e;
+  padding: 0;
+}
+
+/** main elements**/
+
+/** main -> background related **/
+.backgroundMain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background: #495f4b;
+}
+
+.boxes {
+  position: absolute;
+}
+
+.topLeft {
+  background-color: #66837e;
+  width: 33%;
+  height: 67%;
+}
+
+.topRight {
+  background-color: #9d4e2d;
+  width: 67%;
+  height: 33%;
+  right: 0;
+}
+
+.bottomLeft {
+  background-color: #d39153;
+  width: 33%;
+  height: 67%;
+  bottom: 0;
+  right: 0;
+}
+
+.bottomRight {
+  background-color: #9dabb6;
+  width: 67%;
+  height: 33%;
+  bottom: 0;
+  left: 0;
+}
+
+/** main -> login related **/
+.loginForm {
+  position: relative;
+  z-index: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > * {
+  margin: 0.2rem;
+}
+
+form > .btns {
+  display: flex;
+  justify-content: space-between;
+}
+
+form > p {
+  text-align: center;
+}
+
+label {
+  font-size: 0.75rem;
+}
+
+.leftContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.cancelBtn {
+  background-color: white;
+  border-radius: 0.3rem;
+  border: solid 0.1rem #495f4b;
+}
+
+.cancelBtn:hover,
+.loginBtn:hover {
+  background-color: rgb(65, 126, 71);
+  border-radius: 0.3rem;
+  border: solid 0.1rem #495f4b;
+  color: yellow;
+}
+
+.loginBtn {
+  background-color: #495f4b;
+  border-radius: 0.3rem;
+  border: solid 0.1rem #495f4b;
+  color: white;
+}
+
+.links {
+  border: solid 0.1rem #495f4b;
+  border-radius: 0.5rem;
+}
+
+.links > * {
+  color: #495f4b;
+  padding: 1rem;
+}
+
+.links > a:nth-child(2) {
+  border-right: solid 0.1rem #495f4b;
+  border-left: solid 0.1rem #495f4b;
+  padding: 0 0.5rem;
+}
+
+.profile {
+  height: 100%;
+}
+
+.profileImg {
+  background-color: #66837e;
+  max-height: 100%;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.loginLink {
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  background-color: #495f4b;
+  padding: 0.2rem 0.5rem;
+}
+
+.loginLink > * {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .links,
+  .loginLink {
+    display: none;
+  }
+  .toggleBtnContainer {
+    display: flex;
+  }
+
+  .mobileLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    align-items: center;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: #d39153;
+  }
+
+  .mobileLinks > a {
+    color: black;
+  }
+}
